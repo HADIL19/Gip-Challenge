@@ -1,1 +1,56 @@
+# Dependencies
+node_modules/
+
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Runtime files
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Test coverage
+coverage/
+
+# Build output
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# Local databases and temporary files
+*.sqlite
+*.sqlite3
+*.db
+tmp/
+temp/
+
+# Prisma
+# Keep schema and migrations in Git
+# Do not ignore prisma/schema.prisma or prisma/migrations/
+
+# Local-only configuration
+prisma7.config.ts
+
+# Optional agent/tool configuration
+.agents/
+.claude/
+.windsurf/
+skills-lock.json
