@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern calculator built with HTML, CSS, and JavaScript.">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <main class="calculator">
+        <header class="calculator-header">
+            <h1>Calculator</h1>
+            <span class="status">READY</span>
+        </header>
+
+        <section class="display" aria-label="Calculator display">
+            <div id="history" class="history" aria-live="polite"></div>
+            <input
+                type="text"
+                id="display"
+                class="display-input"
+                value="0"
+                aria-label="Calculation display"
+                readonly
+            >
+        </section>
+
+        <div class="keypad">
+            <button class="key function" data-action="clear">AC</button>
+            <button class="key function" data-action="delete" aria-label="Delete last character">DEL</button>
+            <button class="key function" data-value="(">(</button>
+            <button class="key operator" data-value="÷">÷</button>
+
+            <button class="key" data-value="7">7</button>
+            <button class="key" data-value="8">8</button>
+            <button class="key" data-value="9">9</button>
+            <button class="key operator" data-value="×">×</button>
+
+            <button class="key" data-value="4">4</button>
+            <button class="key" data-value="5">5</button>
+            <button class="key" data-value="6">6</button>
+            <button class="key operator" data-value="-">−</button>
+
+            <button class="key" data-value="1">1</button>
+            <button class="key" data-value="2">2</button>
+            <button class="key" data-value="3">3</button>
+            <button class="key operator" data-value="+">+</button>
+
+            <button class="key function" data-value=")">)</button>
+            <button class="key" data-value="0">0</button>
+            <button class="key" data-value=".">.</button>
+            <button class="key equals" data-action="calculate">=</button>
+        </div>
+
+        <footer class="calculator-footer">
+            <span>HTML · CSS · JavaScript</span>
+            <span>Keyboard supported</span>
+        </footer>
+    </main>
+</body>
+</html>
