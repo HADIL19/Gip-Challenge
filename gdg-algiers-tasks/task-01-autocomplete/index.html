@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auto-complete Search Box</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Search a country</h1>
+    <div class="search" role="combobox" aria-expanded="false" aria-owns="results" aria-haspopup="listbox">
+      <input id="search" type="text" placeholder="Try: land, cote d'ivoire…" autocomplete="off"
+             aria-autocomplete="list" aria-controls="results" />
+      <ul id="results" role="listbox" hidden></ul>
+    </div>
+    <p id="count" class="count"></p>
+  </main>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

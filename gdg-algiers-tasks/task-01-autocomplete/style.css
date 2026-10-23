@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; background: #f6f8fb; margin: 0; display: flex; justify-content: center; padding: 60px 16px; }
+main { width: 100%; max-width: 460px; }
+h1 { font-size: 1.4rem; margin-bottom: 16px; }
+.search { position: relative; }
+input { width: 100%; padding: 12px 14px; font-size: 1rem; border: 1px solid #cbd5e1; border-radius: 10px; outline: none; }
+input:focus { border-color: #4285f4; box-shadow: 0 0 0 3px rgba(66,133,244,.2); }
+ul { list-style: none; margin: 6px 0 0; padding: 4px; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; max-height: 280px; overflow-y: auto; position: absolute; width: 100%; z-index: 10; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+li { padding: 9px 12px; border-radius: 6px; cursor: pointer; }
+li.active, li:hover { background: #e8f0fe; }
+mark { background: #fde68a; color: inherit; border-radius: 2px; }
+.count { color: #64748b; font-size: .85rem; }
